@@ -1,0 +1,85 @@
+.navbar {
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+.menuIcon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  
+}
+
+.list a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+
+.head {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.login {
+  color: white;
+  text-decoration: none;
+}
+
+.cart {
+  position: relative;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .menuIcon {
+    display: block;
+  }
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid white 2px;
+  }
+
+  .showMenu {
+    display: flex;
+    
+  }
+
+  
+}
